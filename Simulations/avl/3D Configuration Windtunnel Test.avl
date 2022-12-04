@@ -1,0 +1,140 @@
+# 
+# Note : check consistency of area unit and length units in this file
+# Note : check consistency with inertia units of the .mass file
+# 
+# 
+NACA642A015
+0.0                                 | Mach
+0     0     0.0                     | iYsym  iZsym  Zsym
+  0.30645     0.23946     1.28000   | Sref   Cref   Bref
+  0.00000     0.00000     0.00000   | Xref   Yref   Zref
+ 0.00                               | CDp  (optional)
+
+
+
+#========TODO: REMOVE OR MODIFY MANUALLY DUPLICATE SECTIONS IN SURFACE DEFINITION=========
+SURFACE                      | (keyword)
+Main Wing
+#Nchord    Cspace   [ Nspan Sspace ]
+30        1.0
+
+INDEX                        | (keyword)
+7218                         | Lsurf
+
+YDUPLICATE
+0.0
+
+SCALE
+1.0  1.0  1.0
+
+TRANSLATE
+0.0  0.0  0.0
+
+ANGLE
+   0.000                         | dAinc
+
+
+#____PANEL 1_______
+#______________
+SECTION                                                     |  (keyword)
+   0.0000    0.0000    0.0000    0.2400   0.000   30    3   | Xle Yle Zle   Chord Ainc   [ Nspan Sspace ]
+
+AFIL 0.0 1.0
+NACA 642A015.dat
+
+
+#______________
+SECTION                                                     |  (keyword)
+   0.0000    0.6000    0.0000    0.2400   0.000   30    3   | Xle Yle Zle   Chord Ainc   [ Nspan Sspace ]
+
+AFIL 0.0 1.0
+NACA 642A015.dat
+
+
+#____PANEL 2_______
+#______________
+SECTION                                                     |  (keyword)
+   0.0000    0.6000    0.0000    0.2400   0.000    1    1   | Xle Yle Zle   Chord Ainc   [ Nspan Sspace ]
+
+AFIL 0.0 1.0
+NACA 642A015.dat
+
+
+#______________
+SECTION                                                     |  (keyword)
+   0.0020    0.6100    0.0000    0.2380   0.000    1    1   | Xle Yle Zle   Chord Ainc   [ Nspan Sspace ]
+
+AFIL 0.0 1.0
+NACA 642A015.dat
+
+
+#____PANEL 3_______
+#______________
+SECTION                                                     |  (keyword)
+   0.0020    0.6100    0.0000    0.2380   0.000    1    1   | Xle Yle Zle   Chord Ainc   [ Nspan Sspace ]
+
+AFIL 0.0 1.0
+NACA 642A015.dat
+
+
+#______________
+SECTION                                                     |  (keyword)
+   0.0070    0.6230    0.0000    0.2330   0.000    1    1   | Xle Yle Zle   Chord Ainc   [ Nspan Sspace ]
+
+AFIL 0.0 1.0
+NACA 642A015.dat
+
+
+#____PANEL 4_______
+#______________
+SECTION                                                     |  (keyword)
+   0.0070    0.6230    0.0000    0.2330   0.000    1    1   | Xle Yle Zle   Chord Ainc   [ Nspan Sspace ]
+
+AFIL 0.0 1.0
+NACA 642A015.dat
+
+
+#______________
+SECTION                                                     |  (keyword)
+   0.0150    0.6320    0.0000    0.2250   0.000    1    1   | Xle Yle Zle   Chord Ainc   [ Nspan Sspace ]
+
+AFIL 0.0 1.0
+NACA 642A015.dat
+
+
+#____PANEL 5_______
+#______________
+SECTION                                                     |  (keyword)
+   0.0150    0.6320    0.0000    0.2250   0.000    1    1   | Xle Yle Zle   Chord Ainc   [ Nspan Sspace ]
+
+AFIL 0.0 1.0
+NACA 642A015.dat
+
+
+#______________
+SECTION                                                     |  (keyword)
+   0.0240    0.6360    0.0000    0.2160   0.000    1    1   | Xle Yle Zle   Chord Ainc   [ Nspan Sspace ]
+
+AFIL 0.0 1.0
+NACA 642A015.dat
+
+
+#____PANEL 6_______
+#______________
+SECTION                                                     |  (keyword)
+   0.0240    0.6360    0.0000    0.2160   0.000    1    1   | Xle Yle Zle   Chord Ainc   [ Nspan Sspace ]
+
+AFIL 0.0 1.0
+NACA 642A015.dat
+
+
+#______________
+SECTION                                                     |  (keyword)
+   0.0400    0.6400    0.0000    0.2000   0.000    1    1   | Xle Yle Zle   Chord Ainc   [ Nspan Sspace ]
+
+AFIL 0.0 1.0
+NACA 642A015.dat
+
+
+
+
