@@ -18,3 +18,6 @@ dfltt = pd.read_csv("Simulations/xflr5/SimResults/LTT.csv", sep="\s+")
 dfpanels = pd.read_csv("Simulations/xflr5/SimResults/Panels.csv", sep="\s+")
 dfvlm1 = pd.read_csv("Simulations/xflr5/SimResults/VLM1.csv", sep="\s+")
 dfvlm2 = pd.read_csv("Simulations/xflr5/SimResults/VLM2.csv", sep="\s+")
+
+# Cp data
+dfcp = pd.read_csv("Data Analysis/data/cpdata/2D/corr_test.csv", sep="\s+")
