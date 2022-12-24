@@ -20,13 +20,17 @@ import matplotlib.pyplot as plt
 # If set to True all images will have same colorscale
 set_absolute_colorscale = True
 # Show colorbar on plot
-set_colorbar = True
+set_colorbar = False
 # Either analyze 2D or 3D case
-analysiscase = "3D"
+analysiscase = "2D"
 # Show hotspot
 show_hotspot_temperature = True
 # -----------------------------------------------------------------------------
 
+if not set_colorbar:
+    y_text = 0.1
+else:
+    y_text = 0.17
 if set_absolute_colorscale:
     if analysiscase == "2D":
         colorscale = [13.5, 17.5]
@@ -100,7 +104,7 @@ for root, filenames in get_paths():
             plt.clim(colorscale)
         if show_hotspot_temperature:
             plt.suptitle(f"Hotspot temperature: {round(highest_value, 2)}",\
-                         x=0.305, y=0.17)
+                         x=0.305, y=y_text)
         # x and y axis make no sense for an image
         plt.gca().axes.get_yaxis().set_visible(False)
         plt.gca().axes.get_xaxis().set_visible(False)
